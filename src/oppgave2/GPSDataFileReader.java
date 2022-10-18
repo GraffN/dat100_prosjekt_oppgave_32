@@ -17,6 +17,10 @@ public class GPSDataFileReader {
     // location of GPS data files in this Eclipse project
     private static String GPSLOGS_DIR = System.getProperty("user.dir") + "/logs/";
 
+    public static void main(String[] args) {
+        GPSData pp = readGPSFile("medium");
+    }
+
     public static GPSData readGPSFile(String filename) {
 
         BufferedReader br = null;
@@ -44,6 +48,8 @@ public class GPSDataFileReader {
             line = br.readLine();
 
             while (line != null && i < n) {
+
+                System.out.println(line);
 
                 // split log entry
                 String[] gpsdatapoint = line.split(SEP_STR);
