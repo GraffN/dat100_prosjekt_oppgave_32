@@ -33,19 +33,11 @@ public class GPSComputer {
 
         double distance = 0;
         int i = 0;
-
-
-        while(i < gpspoints.length){
-
-
+        while(i < gpspoints.length-1){
             distance += distance(gpspoints[i],gpspoints[i+1]);
             i++;
-
-
         };
         return distance;
-
-
     }
 
     // beregn totale høydemeter (i meter)
@@ -55,32 +47,23 @@ public class GPSComputer {
         double elevation = 0;
         double[] elevationpoints = new double[gpspoints.length];
 
-        // TODO - START
-
         for(int i = 0; i < gpspoints.length; i++){
             elevationpoints[i] = gpspoints[i].getElevation();
         }
         elevation = findMax(elevationpoints);
-        //throw new UnsupportedOperationException(TODO.method());
 
-        // TODO - SLUTT
         return elevation;
     }
 
     // beregn total tiden for hele turen (i sekunder)
     public int totalTime() {
         int time = 0;
-        /*
-        for (int i = 0; i < gpspoints.length; i++){
-            time += gpspoints[i].getTime();
-        }
-        */
+
         int start = gpspoints[0].getTime();
         int slutt = gpspoints[gpspoints.length-1].getTime();
         time = slutt - start;
 
         return time;
-        //throw new UnsupportedOperationException(TODO.method());
 
     }
 
@@ -88,55 +71,32 @@ public class GPSComputer {
 
     public double[] speeds() {
 
-        // TODO - START		// OPPGAVE - START
         double[] speeds = new double[gpspoints.length-1];
 
         for(int i = 0; i < gpspoints.length-1; i++){
-            if(i +1 > gpspoints.length){
-                i++;
-                break;
-            }else{
-                speeds[i] = speed(gpspoints[i], gpspoints[i+1]);
-            }
 
+                speeds[i] = speed(gpspoints[i], gpspoints[i+1]);
         }
 
         return speeds;
-        //throw new UnsupportedOperationException(TODO.method());
-
-        // TODO - SLUTT
 
     }
 
     public double maxSpeed() {
-        //ambefaler å kalle denne topSpeed istede for maxSpeed
 
         double maxspeed = 0;
 
-        // TODO - START
         maxspeed = findMax(speeds());
         return maxspeed;
-        //throw new UnsupportedOperationException(TODO.method());
-
-        // TODO - SLUTT
 
     }
 
     public double averageSpeed() {
 
         double average = 0;
-        double total = 0;
-
-        // TODO - START
-        //average = (findMax(speeds()) - findMin(speeds())) / speeds().length; Denne linjen burde kunne finne omtrent gjennomsnitt.
-        for(int i = 0; i < speeds().length; i++){
-            total += speeds()[i];
-        }
-        average = total / speeds().length;
+        // skal ha endelig svar i km/t så må bruke 3.6 for å omgjøre til km/t fra m/s. dette burde stå i oppgave tekst.
+        average = (totalDistance() / totalTime()) * 3.6;
         return average;
-        //throw new UnsupportedOperationException(TODO.method());
-
-        // TODO - SLUTT
 
     }
 
@@ -160,9 +120,10 @@ public class GPSComputer {
         // MET: Metabolic equivalent of task angir (kcal x kg-1 x h-1)
         double met = 0;
         double speedmph = speed * MS;
+        double hours = secs/3600;
 
         // TODO - START
-        if(speedmph < 10){
+        if(speedmph <= 10){
             met = 4;
         }else if(speedmph <= 12){
             met = 6;
@@ -175,12 +136,8 @@ public class GPSComputer {
         }else{
             met = 16;
         }
-        kcal = met * (secs/3600) * weight;
+        kcal = met * hours * weight;
         return kcal;
-
-        //throw new UnsupportedOperationException(TODO.method());
-
-        // TODO - SLUTT
 
     }
 
@@ -188,15 +145,15 @@ public class GPSComputer {
 
         double totalkcal = 0;
 
-        /*
+
         // TODO - START
         for(int i = 0; i < gpspoints.length-1; i++){
-            totalkcal += kcal(weight,2,speed(gpspoints[i], gpspoints[i+1]));
+            totalkcal += kcal(weight,gpspoints[i+1].getTime()-gpspoints[i].getTime(),(speed(gpspoints[i], gpspoints[i+1])/ 3.6));
         }
         return totalkcal;
 
-         */
-        throw new UnsupportedOperationException(TODO.method());
+
+        //throw new UnsupportedOperationException(TODO.method());
 
         // TODO - SLUTT
 

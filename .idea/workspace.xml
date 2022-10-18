@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e276550f-d3f1-4cf5-adbb-99980b15d4be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oppgave2/GPSDataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave2/GPSDataFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave3/GPSUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave3/GPSUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave4/GPSComputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave4/GPSComputer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665653809951</updated>
-      <workItem from="1665653812220" duration="24605000" />
+      <workItem from="1665653812220" duration="35290000" />
     </task>
     <task id="LOCAL−00001" summary="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata">
       <created>1665671185574</created>
@@ -99,7 +100,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1666074574906</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Fikk fil reader til å funke!">
+      <created>1666076373902</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1666076373902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +115,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata" />
     <MESSAGE value="gjort en del i oppgave 4 nå, men har noen problemer med file reader der den bare sender ut masse &quot;null&quot; så prøver å finne ut av den." />
-    <option name="LAST_COMMIT_MESSAGE" value="gjort en del i oppgave 4 nå, men har noen problemer med file reader der den bare sender ut masse &quot;null&quot; så prøver å finne ut av den." />
+    <MESSAGE value="Fikk fil reader til å funke!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fikk fil reader til å funke!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
