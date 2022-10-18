@@ -120,7 +120,7 @@ public class GPSComputer {
         // MET: Metabolic equivalent of task angir (kcal x kg-1 x h-1)
         double met = 0;
         double speedmph = speed * MS;
-        double hours = secs/3600;
+        double time = secs/3600;
 
         // TODO - START
         if(speedmph <= 10){
@@ -136,26 +136,20 @@ public class GPSComputer {
         }else{
             met = 16;
         }
-        kcal = met * hours * weight;
+        kcal = met * time * weight;
         return kcal;
-
     }
 
     public double totalKcal(double weight) {
 
+
         double totalkcal = 0;
-
-
-        // TODO - START
         for(int i = 0; i < gpspoints.length-1; i++){
-            totalkcal += kcal(weight,gpspoints[i+1].getTime()-gpspoints[i].getTime(),(speed(gpspoints[i], gpspoints[i+1])/ 3.6));
+            double speed = speed(gpspoints[i], gpspoints[i+1]) * 3.6;
+            int time = Math.abs(gpspoints[i+1].getTime() - gpspoints[i].getTime());
+            totalkcal += kcal(weight,time,speed);
         }
         return totalkcal;
-
-
-        //throw new UnsupportedOperationException(TODO.method());
-
-        // TODO - SLUTT
 
     }
 
@@ -167,15 +161,16 @@ public class GPSComputer {
 
         // TODO - START
 
-        System.out.printf("Total Time\t:\t%s",totalTime());
-        System.out.printf("Total distance\t:\t%s",totalDistance());
-        System.out.printf("Total elevation\t:\t%s",totalElevation());
-        System.out.printf("Max speed\t:\t%s",maxSpeed());
-        System.out.printf("Average speed\t:\t%s",averageSpeed());
-        System.out.printf("Energy\t:\t%s",totalKcal(WEIGHT));
+        System.out.printf("Total Time\t:\t%s \n",totalTime());
+        System.out.printf("Total distance\t:\t%s\n",totalDistance());
+        System.out.printf("Total elevation\t:\t%s\n",totalElevation());
+        System.out.printf("Max speed\t:\t%s\n",maxSpeed());
+        System.out.printf("Average speed\t:\t%s\n",averageSpeed());
+        System.out.printf("Energy\t:\t%s\n",totalKcal(WEIGHT));
         //throw new UnsupportedOperationException(TODO.method());
 
         // TODO - SLUTT
+        System.out.println("==============================================");
         /*==============================================
         Total Time     :   00:36:35
         Total distance :      13.74 km

@@ -44,7 +44,7 @@ public class GPSData {
 
     public boolean insert(String time, String latitude, String longitude, String elevation) {
 
-        GPSPoint gpspoint = convert(time,latitude,longitude,elevation);
+        gpspoints[antall] = convert(time,latitude,longitude,elevation);
         antall++;
     	
         return true;

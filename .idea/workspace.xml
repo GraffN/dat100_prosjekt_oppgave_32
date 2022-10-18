@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e276550f-d3f1-4cf5-adbb-99980b15d4be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oppgave3/GPSUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave3/GPSUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave2/GPSData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave2/GPSData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave2/GPSDataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave2/GPSDataConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oppgave4/GPSComputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave4/GPSComputer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +42,31 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.computer tester">
+  <component name="RunManager" selected="JUnit.converter tester">
     <configuration name="computer tester" type="JUnit" factoryName="JUnit">
       <module name="dat100_prosjekt_oppgave_32" />
       <option name="PACKAGE_NAME" value="oppgave4" />
       <option name="MAIN_CLASS_NAME" value="oppgave4.GPSComputerTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="converter tester" type="JUnit" factoryName="JUnit">
+      <module name="dat100_prosjekt_oppgave_32" />
+      <option name="PACKAGE_NAME" value="oppgave2" />
+      <option name="MAIN_CLASS_NAME" value="oppgave2.GPSDataConverterTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="data tester" type="JUnit" factoryName="JUnit">
+      <module name="dat100_prosjekt_oppgave_32" />
+      <option name="PACKAGE_NAME" value="oppgave2" />
+      <option name="MAIN_CLASS_NAME" value="oppgave2.GPSDataTester" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -75,6 +96,8 @@
     <list>
       <item itemvalue="JUnit.utils tester" />
       <item itemvalue="JUnit.computer tester" />
+      <item itemvalue="JUnit.converter tester" />
+      <item itemvalue="JUnit.data tester" />
       <item itemvalue="JUnit.file reader tester" />
     </list>
   </component>
@@ -86,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665653809951</updated>
-      <workItem from="1665653812220" duration="35290000" />
+      <workItem from="1665653812220" duration="38358000" />
     </task>
     <task id="LOCAL−00001" summary="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata">
       <created>1665671185574</created>
@@ -106,7 +129,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1666076373902</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="fortsatt med oppgave 4">
+      <created>1666088611845</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1666088611845</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +145,8 @@
     <MESSAGE value="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata" />
     <MESSAGE value="gjort en del i oppgave 4 nå, men har noen problemer med file reader der den bare sender ut masse &quot;null&quot; så prøver å finne ut av den." />
     <MESSAGE value="Fikk fil reader til å funke!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fikk fil reader til å funke!" />
+    <MESSAGE value="fortsatt med oppgave 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fortsatt med oppgave 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
