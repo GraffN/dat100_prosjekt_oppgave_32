@@ -100,15 +100,6 @@ public class GPSComputer {
 
     }
 
-    /*
-     * bicycling, <10 mph, leisure, to work or for pleasure 4.0 bicycling,
-     * general 8.0 bicycling, 10-11.9 mph, leisure, slow, light effort 6.0
-     * bicycling, 12-13.9 mph, leisure, moderate effort 8.0 bicycling, 14-15.9
-     * mph, racing or leisure, fast, vigorous effort 10.0 bicycling, 16-19 mph,
-     * racing/not drafting or >19 mph drafting, very fast, racing general 12.0
-     * bicycling, >20 mph, racing, not drafting 16.0
-     */
-
     // conversion factor m/s to miles per hour
     public static double MS = 2.236936;
 
@@ -145,12 +136,11 @@ public class GPSComputer {
 
         double totalkcal = 0;
         for(int i = 0; i < gpspoints.length-1; i++){
-            double speed = speed(gpspoints[i], gpspoints[i+1]) * 3.6;
-            int time = Math.abs(gpspoints[i+1].getTime() - gpspoints[i].getTime());
+            double speed = speed(gpspoints[i], gpspoints[i+1]);
+            int time = gpspoints[i+1].getTime() - gpspoints[i].getTime();
             totalkcal += kcal(weight,time,speed);
         }
         return totalkcal;
-
     }
 
     private static double WEIGHT = 80.0;
@@ -161,12 +151,12 @@ public class GPSComputer {
 
         // TODO - START
 
-        System.out.printf("Total Time\t:\t%s \n",totalTime());
-        System.out.printf("Total distance\t:\t%s\n",totalDistance());
+        System.out.printf("Total Time\t\t:\t%s \n",formatTime(totalTime()));
+        System.out.printf("Total distance\t:\t%s \n",totalDistance());
         System.out.printf("Total elevation\t:\t%s\n",totalElevation());
-        System.out.printf("Max speed\t:\t%s\n",maxSpeed());
+        System.out.printf("Max speed\t\t:\t%s\n",maxSpeed());
         System.out.printf("Average speed\t:\t%s\n",averageSpeed());
-        System.out.printf("Energy\t:\t%s\n",totalKcal(WEIGHT));
+        System.out.printf("Energy\t\t\t:\t%s\n",totalKcal(WEIGHT));
         //throw new UnsupportedOperationException(TODO.method());
 
         // TODO - SLUTT

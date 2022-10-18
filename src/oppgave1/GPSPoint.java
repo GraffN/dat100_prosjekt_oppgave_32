@@ -17,7 +17,6 @@ public class GPSPoint {
         this.longitude = longitude;
         this.elevation = elevation;
 
-
     }
 
     public int getTime() {
@@ -71,7 +70,6 @@ public class GPSPoint {
     public String toString() {
 
         String str;
-
 
         return str = Integer.toString(time) + " (" + Double.toString(latitude) + "," + Double.toString(longitude) + ") " + Double.toString(elevation) + "\n";
 

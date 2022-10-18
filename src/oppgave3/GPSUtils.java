@@ -20,7 +20,6 @@ public class GPSUtils {
                 max = d;
             }
         }
-
         return max;
     }
 
@@ -57,7 +56,6 @@ public class GPSUtils {
             longitudes[i] = gpspoints[i].getLongitude();
         }
 
-
         return longitudes;
 
     }
@@ -69,7 +67,6 @@ public class GPSUtils {
         double d, a, c;
         double latitude1, longitude1, latitude2, longitude2;
         double distanceLat, distanceLong;
-
 
         // TODO - START
         latitude1 = Math.toRadians(gpspoint1.getLatitude());
