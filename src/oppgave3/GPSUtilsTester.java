@@ -17,9 +17,9 @@ public class GPSUtilsTester {
 
     @Test
     public void testformatTime() {
-        assertEquals( "formaitTime", "00:00:09",GPSUtils.formatTime(9));
-        assertEquals(  "formatTime","00:01:22",GPSUtils.formatTime(82));
-        assertEquals(  "formatTime", "03:02:01",GPSUtils.formatTime(60 * 60 * 3 + 60 * 2 + 1));
+        assertEquals("00:00:09",GPSUtils.formatTime(9));
+        assertEquals("00:01:22",GPSUtils.formatTime(82));
+        assertEquals("03:02:01",GPSUtils.formatTime(60 * 60 * 3 + 60 * 2 + 1));
     }
 
     @Test

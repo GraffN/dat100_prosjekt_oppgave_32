@@ -24,7 +24,8 @@ Implementer metoden
 public double totalDistance()
 ```
 
-som beregner den totale distansen på ruten som GPS dataene i `gpspoints`-tabellen angir. Dvs. metoden må legge sammen avstanden (distanser) mellom de punktene som utgjør ruten.
+som beregner den totale distansen på ruten som GPS dataene i `gpspoints`-tabellen angir.
+Dvs. metoden må legge sammen avstanden (distanser) mellom de punktene som utgjør ruten.
 
 #### b)
 
@@ -54,7 +55,9 @@ Implementer metoden
 public double[] speeds()
 ```
 
-som skal returnere en tabell med gjennomsnitshastigheter mellom hver av de punktene vi har beveget oss mellom. Dvs. første inngang i tabellen skal være hastigheten vi beveget oss med mellom punkt 0 og punkt 1, andre inngang hastigheten mellom punkt 1 og 2 osv. Hvis antall GPS datapunker er *N* da vil lengden av den tabellen som returneres være *N-1*.
+som skal returnere en tabell med gjennomsnitshastigheter mellom hver av de punktene vi har beveget oss mellom. 
+Dvs. første inngang i tabellen skal være hastigheten vi beveget oss med mellom punkt 0 og punkt 1, 
+andre inngang hastigheten mellom punkt 1 og 2 osv. Hvis antall GPS datapunker er *N* da vil lengden av den tabellen som returneres være *N-1*.
 
 #### e)
 
@@ -85,11 +88,14 @@ public double kcal(double weight, int secs, double speed)
 
 som beregnerer/estimerer hvor mye energi der er forbrent gitt vekten på personen og den tid i sekunder som personen har bevæget seg med den hastigheten.
 
-For å kunne estimere energi-forbrenningen i kilo-kalorier (kcal) skal vi først finne *MET* (Metabolic Equivalent of Task)  som er et fysiologisk mål for hvor mange kcal vi forbrenner per kilo kroppsvekt per time ved en gitt aktivitet. MET avhenger av type aktivitet og intensitet. For sykling [ http://coachlevi.com/health/calories-burned-bicycling/ ] er den gitt i tabellen nedenfor der hastighet er angitt i miles per hour (mps):
+For å kunne estimere energi-forbrenningen i kilo-kalorier (kcal) skal vi først finne *MET* (Metabolic Equivalent of Task)
+som er et fysiologisk mål for hvor mange kcal vi forbrenner per kilo kroppsvekt per time ved en gitt aktivitet. 
+MET avhenger av type aktivitet og intensitet. For sykling [ http://coachlevi.com/health/calories-burned-bicycling/ ] 
+er den gitt i tabellen nedenfor der hastighet er angitt i miles per hour (mps):
 
 ```
 Hastighet	MET
-<10 mph	4.0
+<10 mph	    4.0
 10-12 mph	6.0
 12-14 mph	8.0
 14-16 mph	10.0
@@ -97,7 +103,8 @@ Hastighet	MET
 >20 mph	16.0
 ```
 
-Hastighet i km/t kan omregnes til mph ved å gange med en faktor *0.62*. MET vil også avhenge av eks. stigningsprosent (om det går opp eller ned og hvor mye) men det skal vi se bort fra her.
+Hastighet i km/t kan omregnes til mph ved å gange med en faktor *0.62*. MET vil også avhenge av eks. 
+stigningsprosent (om det går opp eller ned og hvor mye) men det skal vi se bort fra her.
 
 #### h)
 

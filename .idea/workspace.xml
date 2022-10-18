@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e276550f-d3f1-4cf5-adbb-99980b15d4be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oppgave2/GPSData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave2/GPSData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oppgave2/GPSDataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave2/GPSDataConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/oppgave4.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/oppgave4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave2/GPSDataTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave2/GPSDataTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave3/GPSUtilsTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave3/GPSUtilsTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oppgave4/GPSComputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oppgave4/GPSComputer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +37,49 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.file reader tester">
+    <configuration name="computer tester" type="JUnit" factoryName="JUnit">
+      <module name="dat100_prosjekt_oppgave_32" />
+      <option name="PACKAGE_NAME" value="oppgave4" />
+      <option name="MAIN_CLASS_NAME" value="oppgave4.GPSComputerTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="file reader tester" type="JUnit" factoryName="JUnit">
+      <module name="dat100_prosjekt_oppgave_32" />
+      <option name="PACKAGE_NAME" value="oppgave2" />
+      <option name="MAIN_CLASS_NAME" value="oppgave2.GPSDataFileReaderTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="utils tester" type="JUnit" factoryName="JUnit">
+      <module name="dat100_prosjekt_oppgave_32" />
+      <option name="PACKAGE_NAME" value="oppgave3" />
+      <option name="MAIN_CLASS_NAME" value="oppgave3.GPSUtilsTester" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.utils tester" />
+      <item itemvalue="JUnit.computer tester" />
+      <item itemvalue="JUnit.file reader tester" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,11 +88,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665653809951</updated>
-      <workItem from="1665653812220" duration="8341000" />
+      <workItem from="1665653812220" duration="23009000" />
     </task>
+    <task id="LOCAL−00001" summary="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata">
+      <created>1665671185574</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1665671185574</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata" />
+    <option name="LAST_COMMIT_MESSAGE" value="gjennomført oppgave 2 dataconverter og jobber videre med gpsdata" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/oppgave3/GPSUtilsTester.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

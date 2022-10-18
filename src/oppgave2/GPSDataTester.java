@@ -69,7 +69,5 @@ class GPSDataTester {
         gpsdata.print();
 
     }
-
-
 }
 
